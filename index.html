@@ -178,6 +178,56 @@
     cursor: pointer;
 }
 
+/* Entrance Fees and Rental Rates */
+.pricing {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f0f8f5;
+}
+
+.pricing h2 {
+    color: #075447;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.pricing p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.price-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+    transition: transform 0.3s;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+}
+
+.price-card h3 {
+    color: #075447;
+    font-size: 21px;
+}
+
+.price-card .price {
+    color: #e09b32;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
 
 .contact {
             background: #104d43;
@@ -327,9 +377,39 @@
         </a>
     </section>
 
+
+<section class="pricing" id="pricing">
+    <h2>Entrance Fees & Rental Rates</h2>
+    <p>Enjoy a relaxing getaway at Brook Side Pool!</p>
+
+    <div class="pricing-container">
+        <div class="price-card">
+            <h3>Day Tour</h3>
+            <div class="price">₱75</div>
+        </div>
+
+        <div class="price-card">
+            <h3>Overnight</h3>
+            <div class="price">₱100</div>
+        </div>
+
+        <div class="price-card">
+            <h3>Extension</h3>
+            <div class="price">₱75</div>
+        </div>
+
+        <div class="price-card">
+            <h3>Tent Rental</h3>
+            <div class="price">₱300</div>
+        </div>
+    </div>
+</section>
+
     <footer>
         <p>&copy; 2026 Brook Side Pool. All Rights Reserved.</p>
     </footer>
+
+
 
 </body>
 </html>
